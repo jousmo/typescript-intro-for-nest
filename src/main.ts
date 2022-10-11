@@ -1,6 +1,7 @@
 import './style.css'
 import { templateString } from './bases/01-types'
 import { pokemonIds, pikachu, pokemons } from './bases/02-objects'
+import { charmander } from './bases/03-classes'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -16,6 +17,9 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     </p>
     <p>
       ${JSON.stringify(pokemons)}
+    </p>
+    <p>
+      ${JSON.stringify(charmander)}
     </p>
   </div>
 `
