@@ -30,7 +30,7 @@ export class Pokemon {
 
   scream(): any {
     console.log(this.speak())
-    return console.log(`${this.name.toUpperCase()}!!!!.`)
+    return `${this.name.toUpperCase()}!!!!.`
   }
 
   async getMoves(): Promise<Move[]> {
