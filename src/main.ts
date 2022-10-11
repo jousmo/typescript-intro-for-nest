@@ -6,6 +6,7 @@ import { charmander } from './bases/03-classes'
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
     <h1>Esto es asombroso</h1>
+    <h2>Abre tu devtools</h2>
     <p class="read-the-docs">
       ${templateString}
     </p>
