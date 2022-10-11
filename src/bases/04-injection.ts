@@ -1,9 +1,9 @@
 import { Move, PokeAPIResponse } from '../interfaces/pokeapi-response.interface'
-import { PokeApiAdapter } from '../api/pokeApi.adapter'
+import { HttpAdapter, PokeApiAdapter, PokeApiFetchAdapter } from '../api/pokeApi.adapter'
 
 export class Pokemon {
   constructor(
-    private readonly http: PokeApiAdapter
+    private readonly http: HttpAdapter
   ) {}
 
   async getMoves(): Promise<Move[]> {
@@ -13,8 +13,9 @@ export class Pokemon {
   }
 }
 
-const pokeApi = new PokeApiAdapter()
+const pokeApiFetch = new PokeApiFetchAdapter()
+const pokeApiAxios = new PokeApiAdapter()
 
-export const bulbalsor = new Pokemon(pokeApi)
+export const bulbalsor = new Pokemon(pokeApiFetch)
 
 console.log("Ejale", bulbalsor.getMoves())
