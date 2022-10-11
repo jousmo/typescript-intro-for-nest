@@ -1,6 +1,6 @@
 ## Intro basic course typescript
 
-This course this course shows basic examples of the use of TS
+This course shows basic examples of the use of TS
 
 ### Create app with [Vite](https://vitejs.dev)
 
