@@ -16,6 +16,19 @@ export class Pokemon {
   ) {
     console.log('Constructor llamado')
   }
+
+  get imageUrl(): string {
+    return `https://pokemon.com/${this.id}`
+  }
+
+  private speak(): any {
+    return console.log(`${this.name} ${this.name}`)
+  }
+
+  scream(): any {
+    console.log(this.speak())
+    return console.log(`${this.name.toUpperCase()}!!!!.`)
+  }
 }
 
 export const charmander = new Pokemon(4, 'pepito charmander')

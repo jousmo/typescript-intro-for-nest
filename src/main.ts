@@ -21,5 +21,13 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
     <p>
       ${JSON.stringify(charmander)}
     </p>
+    <p>
+      Hey soy un getter:
+      ${charmander.imageUrl}
+    </p>
+    <p>
+      Metodos:
+      ${charmander.scream()}
+    </p>
   </div>
 `
