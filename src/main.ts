@@ -4,6 +4,7 @@ import { pokemonIds, pikachu, pokemons } from './bases/02-objects'
 import { charmander } from './bases/03-classes'
 import './bases/04-injection'
 import './bases/05-decorators'
+import './bases/06-decorators2'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
